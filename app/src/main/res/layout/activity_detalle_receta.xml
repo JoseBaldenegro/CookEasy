@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f5f5f5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Información de la receta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/txtNombreRecetaDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre Receta"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/text_primary" />
+
+            <ImageView
+                android:id="@+id/imgRecetaDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder"
+                android:layout_marginTop="16dp" />
+
+            <CheckBox
+                android:id="@+id/chkFavoritaDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/marcar_favorita"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/text_primary" />
+
+            <Button
+                android:id="@+id/btnVerVideoPasos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/video_y_pasos"
+                android:background="#FF5722"
+                android:textColor="#ffffff"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Ingredientes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredientes"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FF5722" />
+
+            <LinearLayout
+                android:id="@+id/layoutIngredientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <!-- Los ingredientes se agregarán dinámicamente -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Foto del usuario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:padding="16dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/result"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FF5722" />
+
+            <ImageView
+                android:id="@+id/imgResultadoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:background="#e0e0e0"
+                android:src="@drawable/ic_add_photo"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/user_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/btnTomarFoto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/take_pic"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#2196F3"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnSeleccionarFoto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/select_gallery"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCompartir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share"
+                android:background="#FF5722"
+                android:textColor="#ffffff"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

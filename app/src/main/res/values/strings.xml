@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CookEasy</string>
+    <string name="postres">Postres</string>
+    <string name="sopas">Sopas</string>
+    <string name="cookeasy">CookEasy</string>
+    <string name="favoritas">Recetas Favoritas</string>
+    <string name="descripcion">Descripción breve de la receta</string>
+    <string name="favorita">Favorita</string>
+    <string name="recetas">Recetas</string>
+    <string name="marcar_favorita">Marcar como favorita</string>
+    <string name="video_y_pasos">Ver Video y Pasos</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="result">Mi resultado</string>
+    <string name="user_image">Foto del resultado del usuario</string>
+    <string name="select_gallery">Seleccionar de Galería</string>
+    <string name="share">Compartir Mi Resultado</string>
+    <string name="take_pic">Tomar Foto</string>
+    <string name="rec_vid">Video de la receta</string>
+    <string name="vid_load">El video comenzará a reproducirse automáticamente</string>
+    <string name="pasos">Pasos a seguir</string>
+    <string name="back_det">Volver al Detalle</string>
+</resources>
